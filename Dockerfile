@@ -1,4 +1,4 @@
-FROM ruby:3.2.2
+FROM ruby:3.4.2
 ENV LANG C.UTF-8
 
 RUN mkdir -p /src/tdd_challenge
