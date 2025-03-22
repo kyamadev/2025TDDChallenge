@@ -1,4 +1,4 @@
-class Era
+class ConvertEra
     # 元号変換ロジック
     #
     # @param year [Integer] #西暦
@@ -16,8 +16,8 @@ class Era
         end
     end
 
-    def convert(input)
-        input.chomp.lines.each do |line|
+    def convert()
+        $stdin.read.chomp.lines.each do |line|
             begin
                 splited = line.split('/')
 
@@ -32,7 +32,3 @@ class Era
         end
     end
 end
-
-era = Era.new
-
-era.convert($stdin.read)
