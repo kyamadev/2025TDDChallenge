@@ -32,3 +32,6 @@ class ConvertEra
         end
     end
 end
+
+convert = ConvertEra.new
+convert.convert
